@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="70dp"
         android:ems="10"
         android:hint="키를입력하세요"
         android:inputType="numberSigned"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="150dp"
         android:ems="10"
         android:hint="체중을 입력하세요"
         android:inputType="numberSigned"
@@ -34,7 +34,7 @@
         android:id="@+id/txtCm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="2dp"
         android:layout_marginBottom="2dp"
         android:text="Cm"
         app:layout_constraintBottom_toBottomOf="@+id/heightField"
@@ -44,7 +44,7 @@
         android:id="@+id/txtKg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="2dp"
         android:layout_marginBottom="2dp"
         android:text="kg"
         app:layout_constraintBottom_toBottomOf="@+id/weightField"
@@ -54,20 +54,21 @@
         android:id="@+id/btnBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="5dp"
         android:text="BMI 계산"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/weightField"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="273dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="20dp"
         android:text="BMI Result"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBMI" />
 </androidx.constraintlayout.widget.ConstraintLayout>
