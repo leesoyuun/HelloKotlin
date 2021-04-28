@@ -51,7 +51,7 @@
         app:layout_constraintStart_toEndOf="@+id/weightField" />
 
     <Button
-        android:id="@+id/btnBMI"
+        android:id="@+id/btnBmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
@@ -70,5 +70,5 @@
         android:layout_marginTop="20dp"
         android:text="BMI Result"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBMI" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBmi" />
 </androidx.constraintlayout.widget.ConstraintLayout>
