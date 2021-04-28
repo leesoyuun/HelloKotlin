@@ -22,7 +22,7 @@ class BmiKotlinActivity : AppCompatActivity() {
             val weight = heightField.getText().toString().toDouble()
             */
             val sHeight= heightField.getText().toString()
-            val sWeight = heightField.getText().toString()
+            val sWeight = weightField.getText().toString()
 
        /*     try{
                 val bmi = sWeight.toDouble() / Math.pow(sHeight.toDouble() /100.0,2.0)
@@ -31,7 +31,7 @@ class BmiKotlinActivity : AppCompatActivity() {
                 txtResult.setText("Input(s) missing")
             }*/
             if(!sHeight.equals("") && !sWeight.equals("")){
-                val bmi = sHeight.toDouble()/Math.pow(sHeight.toDouble()/100.0,2.0)
+                val bmi = sWeight.toDouble()/Math.pow(sHeight.toDouble()/100.0,2.0)
                 txtResult.setText("Your BMI = " + bmi)
 
             }
