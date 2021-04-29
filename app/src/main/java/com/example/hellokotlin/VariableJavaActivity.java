@@ -13,7 +13,7 @@ import java.util.Locale;
 public class VariableJavaActivity extends AppCompatActivity {
     int clickCount;
     long startTime = System.currentTimeMillis();
-    TextView txtActivityStartTime, txtContBtnClicks;
+    TextView txtActivityStartTime, txtContBtnClicks, txtElapsedTime;;
     Button btnClickMe;
 
 
@@ -26,6 +26,8 @@ public class VariableJavaActivity extends AppCompatActivity {
         txtActivityStartTime=findViewById(R.id.txtActivityStartTime);
         txtContBtnClicks=findViewById(R.id.txtCountBtnClicks);
         btnClickMe=findViewById(R.id.btnClickMe);
+        txtElapsedTime =findViewById(R.id.txtElapsedTime);
+
         clickCount =0;
     //    startTime = System.currentTimeMillis();
 
@@ -34,6 +36,8 @@ public class VariableJavaActivity extends AppCompatActivity {
             public void onClick(View v) {
                 clickCount++;
                 txtContBtnClicks.setText("Button clicks = " + clickCount);
+                long elapsedSeconds = ((System.currentTimeMillis() - startTime)/1000);
+                txtElapsedTime.setText(elapsedSeconds+"Seconds Elapsed");
 
             }
         });
