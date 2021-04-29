@@ -24,7 +24,7 @@ class VariableKotlinActivity2 : AppCompatActivity() {
 
         btnClickMe.setOnClickListener {
             clickCount++
-            txtCountBtnClicks.text = "Button clicks =  + ${clickCount}"
+            txtCountBtnClicks.text = "Button clicks =  ${clickCount}"
 
         }
     }
