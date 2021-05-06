@@ -9,8 +9,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class FlowControlJavaActivity extends AppCompatActivity {
-EditText fieldNumber;
-Button btnLD;
+    EditText fieldNumber;
+    Button btnLD;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -25,22 +26,29 @@ Button btnLD;
             public void onClick(View v) {
                 int number = Integer.parseInt(fieldNumber.getText().toString());
 
-                if(number % 2 == 0){
-                    Toast.makeText(getApplicationContext(), "" + number + "은(는)2의 배수",Toast.LENGTH_SHORT).show();
-                }
-                else if(number % 3 ==0){
-                    Toast.makeText(getApplicationContext(),"" + number + "은(는) 3의 배수",Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(getApplicationContext(),"" + number + "은(는) else",Toast.LENGTH_LONG).show();
+                if (number % 2 == 0) {
+                    //      Toast.makeText(getApplicationContext(), "" + number + "은(는)2의 배수",Toast.LENGTH_SHORT).show();
+                    ToastUtilJava.toast_short(number + "은(는)2의 배수");
+                } else if (number % 3 == 0) {
+                    //        Toast.makeText(getApplicationContext(),"" + number + "은(는) 3의 배수",Toast.LENGTH_SHORT).show();
+                    ToastUtilJava.toast_short(number + "은(는)3의 배수");
+                } else {
+                    //       Toast.makeText(getApplicationContext(),"" + number + "은(는) else",Toast.LENGTH_LONG).show();
+                    ToastUtilJava.toast_long(number + "은(는) else");
                 }
                 switch (number) {
                     case 4:
-                    case 9: btnLD.setText("실행 for " + number); break;
-                    default: btnLD.setText("실행 for else"); break;
+                    case 9:
+                        btnLD.setText("실행 for " + number);
+                        break;
+                    default:
+                        btnLD.setText("실행 for else");
+                        break;
                 }
             }
         });
 
     }
 }
+//FlowControlJavaActivity onObject = new ...()
+    //anObject.toast_short(message);
