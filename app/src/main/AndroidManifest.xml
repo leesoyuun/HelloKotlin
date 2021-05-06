@@ -9,12 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloKotlin">
+        <activity
+            android:name=".FlowControlKotlinActivity"
+            android:label="FlowControlKotlinActivity"></activity>
+        <activity
+            android:name=".FlowControlJavaActivity"
+            android:label="FlowControlJavaActivity"/>
 
         <activity
             android:name=".VariableJavaActivity"
             android:label="VariableJavaActivity" />
         <activity
-            android:name="VariableKotlinActivity2"
+            android:name=".VariableKotlinActivity2"
             android:label="VariableKotlinActivity2" />
         <activity
             android:name=".BmiKotlinActivity"
